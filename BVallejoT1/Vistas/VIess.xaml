@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BVallejoT1.Vistas.VIess"
+             Title="VIess">
+    <ScrollView>
+        <VerticalStackLayout
+         Padding="30,0"
+         Spacing="25">
+            <Label
+             Text="Calcular Aporte al IESS"
+             Style="{StaticResource Headline}"
+             SemanticProperties.HeadingLevel="Level1"
+             />
+            <Entry 
+             x:Name="txtNombre"
+             Placeholder="Ingrese su Nombre"
+             Keyboard="Chat"
+             />
+            <Entry 
+             x:Name="txtApellido"
+             Placeholder="Ingrese su Apellido"
+             Keyboard="Chat"
+             />
+            <Entry
+             x:Name="txtEdad"
+             Placeholder="Ingrese su Edad"
+             Keyboard="Numeric"
+             MaxLength="2"
+             />
+            <Entry
+             x:Name="txtSalario"
+             Placeholder="Ingrese su Salario"
+             Keyboard="Numeric"
+             />
+            <Button
+             x:Name="CounterBtn"
+             Text="Click me" 
+             Clicked="OnEjecutar"
+             HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
